@@ -1,14 +1,13 @@
+""" File serializers """
+
+# Django REST Framework
 from rest_framework import serializers
 
+# Models
+from files.models import File
+
 class FileSerializer(serializers.Serializer):
-    name = serializers.CharField()
     url = serializers.FileField()
+    name = serializers.CharField()
     size = serializers.IntegerField()
-    extension = serializers.CharField()
-
-
-class CreateFileSerializer(serializers.Serializer):
-    name = serializers.CharField(max_length=50)
-    url = serializers.FileField(required=False)
-    size = serializers.IntegerField()
-    extension = serializers.CharField(max_length=5)
+    created = serializers.DateTimeField()

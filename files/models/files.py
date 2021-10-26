@@ -7,11 +7,8 @@ from django.db import models
 from utils.models import FileManagerModel
 
 class File(FileManagerModel):
-    """ File model """
-    name = models.CharField('Name', max_length=50)
-    url = models.FileField('File', upload_to='media/files/', blank=True, null=True)
+    url = models.FileField(blank=False,  upload_to='media/files/', null=False)
+    name = models.CharField(max_length=50, verbose_name='Name')
     size = models.PositiveSmallIntegerField()
-    extension = models.CharField('Extension', max_length=5, default=0)
-
     def __str__(self):
-        return self.name
+        return self.file.name

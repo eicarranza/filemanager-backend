@@ -11,10 +11,5 @@ class FileAdmin(admin.ModelAdmin):
     """ File admin """
 
     list_display = (
-        'name',
         'url', 
     )
-
-    search_files = ('name', 'extension')
-
-    list_filter = ('extension',)
