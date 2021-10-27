@@ -19,3 +19,10 @@ class filesAllowedSerializer(serializers.Serializer):
     name = serializers.CharField()
     extension = serializers.CharField() 
     is_active = serializers.BooleanField()
+
+
+class fileSettingsSerializer(serializers.Serializer):
+    id = serializers.IntegerField() 
+    name = serializers.CharField()
+    value = serializers.IntegerField()
+    

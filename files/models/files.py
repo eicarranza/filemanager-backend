@@ -19,3 +19,6 @@ class FileAllowed(FileManagerModel):
     extension = models.CharField(max_length=5, verbose_name='Extension')
     is_active = models.BooleanField(default=True)
     
+class FileSettings(FileManagerModel):
+    name  = models.CharField(max_length=50, verbose_name='name')
+    value = models.PositiveSmallIntegerField(verbose_name='value')

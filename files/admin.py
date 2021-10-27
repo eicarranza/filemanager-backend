@@ -4,7 +4,7 @@
 from django.contrib import admin
 
 # Model
-from files.models import (File, FileAllowed)
+from files.models import (File, FileAllowed, FileSettings)
 
 @admin.register(File)
 class FileAdmin(admin.ModelAdmin):
@@ -29,3 +29,15 @@ class FilesAllowedAdmin(admin.ModelAdmin):
     )
 
     list_editable = ('extension',)
+
+@admin.register(FileSettings)
+class FilesAllowedAdmin(admin.ModelAdmin):
+    """ Settings file admin """
+    verbose_name_plural = 'Settings Files Admin'
+    
+    list_display = (
+        'name', 
+        'value'
+    )
+
+    list_editable = ('value',)

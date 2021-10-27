@@ -1,1 +1,1 @@
-from .files import File, FileAllowed
+from .files import File, FileAllowed, FileSettings
