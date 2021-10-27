@@ -1,74 +1,112 @@
 [
     {
         "model": "files.FileAllowed",
-        "pk": 1,
         "fields": {
             "name": "All Microsoft Word",
-            "extension": ".docx",
-            "is_active": true
+            "extension": "docx",
+            "is_active": true,
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
         }
     },   
     {
         "model": "files.FileAllowed",
-        "pk": 2,
         "fields": {
             "name": "Microsoft Word",
-        "extension": ".doc",
-        "is_active": true
+        "extension": "doc",
+        "is_active": true,
+        "created": "2021-10-27T06:00:50.752Z",
+        "modified": "2021-10-27T06:00:50.752Z"
         }
     },
     {
         "model": "files.FileAllowed",
-        "pk": 3,
         "fields": {
             "name": "All Microsoft Excel",
-            "extension": ".xlsx",
-            "is_active": true
+            "extension": "xlsx",
+            "is_active": true,
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
         }
     },
     {
         "model": "files.FileAllowed",
-        "pk": 4,
         "fields": {
             "name": "Microsoft Excel",
-            "extension": ".xls",
-            "is_active": true
+            "extension": "xls",
+            "is_active": true,
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
         }
     },
     {
         "model": "files.FileAllowed",
-        "pk": 5,
         "fields": {
             "name": "All Microsoft Power Point",
-        "extension": ".pptx",
-        "is_active": true
+        "extension": "pptx",
+        "is_active": true,
+        "created": "2021-10-27T06:00:50.752Z",
+        "modified": "2021-10-27T06:00:50.752Z"
         }
     },
     {
         "model": "files.FileAllowed",
-        "pk": 6,
         "fields": {
             "name": "Power Point",
-            "extension": ".ppt",
-            "is_active": true
+            "extension": "ppt",
+            "is_active": true,
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
         }
     },  
     {
         "model": "files.FileAllowed",
-        "pk": 7,
         "fields": {
             "name": "Acrobat Reader",
-        "extension": ".pdf",
-        "is_active": true
+        "extension": "pdf",
+        "is_active": true,
+        "created": "2021-10-27T06:00:50.752Z",
+        "modified": "2021-10-27T06:00:50.752Z"
         }
     },  
     {
         "model": "files.FileAllowed",
-        "pk": 8,
         "fields": {
             "name": "Text File",
-            "extension": ".txt",
-            "is_active": true
+            "extension": "txt",
+            "is_active": true,
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
+        }
+    },
+    {
+        "model": "files.FileAllowed",
+        "fields": {
+            "name": "JPG",
+            "extension": "jpg",
+            "is_active": true,
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
+        }
+    },
+    {
+        "model": "files.FileAllowed",
+        "fields": {
+            "name": "PNG",
+            "extension": "png",
+            "is_active": true,
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
+        }
+    },
+    {
+        "model": "files.FileSettings",
+        "pk": 1,
+        "fields": {
+            "name": "Max size allowed",
+            "value": "99999999",
+            "created": "2021-10-27T06:00:50.752Z",
+            "modified": "2021-10-27T06:00:50.752Z"
         }
     }
 ]

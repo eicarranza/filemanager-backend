@@ -21,4 +21,4 @@ class FileAllowed(FileManagerModel):
     
 class FileSettings(FileManagerModel):
     name  = models.CharField(max_length=50, verbose_name='name')
-    value = models.PositiveSmallIntegerField(verbose_name='value')
+    value = models.PositiveIntegerField(verbose_name='value')
