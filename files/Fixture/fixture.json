@@ -1,0 +1,74 @@
+[
+    {
+        "model": "files.FileAllowed",
+        "pk": 1,
+        "fields": {
+            "name": "All Microsoft Word",
+            "extension": ".docx",
+            "is_active": true
+        }
+    },   
+    {
+        "model": "files.FileAllowed",
+        "pk": 2,
+        "fields": {
+            "name": "Microsoft Word",
+        "extension": ".doc",
+        "is_active": true
+        }
+    },
+    {
+        "model": "files.FileAllowed",
+        "pk": 3,
+        "fields": {
+            "name": "All Microsoft Excel",
+            "extension": ".xlsx",
+            "is_active": true
+        }
+    },
+    {
+        "model": "files.FileAllowed",
+        "pk": 4,
+        "fields": {
+            "name": "Microsoft Excel",
+            "extension": ".xls",
+            "is_active": true
+        }
+    },
+    {
+        "model": "files.FileAllowed",
+        "pk": 5,
+        "fields": {
+            "name": "All Microsoft Power Point",
+        "extension": ".pptx",
+        "is_active": true
+        }
+    },
+    {
+        "model": "files.FileAllowed",
+        "pk": 6,
+        "fields": {
+            "name": "Power Point",
+            "extension": ".ppt",
+            "is_active": true
+        }
+    },  
+    {
+        "model": "files.FileAllowed",
+        "pk": 7,
+        "fields": {
+            "name": "Acrobat Reader",
+        "extension": ".pdf",
+        "is_active": true
+        }
+    },  
+    {
+        "model": "files.FileAllowed",
+        "pk": 8,
+        "fields": {
+            "name": "Text File",
+            "extension": ".txt",
+            "is_active": true
+        }
+    }
+]
