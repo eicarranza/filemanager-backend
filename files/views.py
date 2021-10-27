@@ -67,19 +67,18 @@ def update_files_allowed(request, pk):
 @api_view(['GET'])
 def file_settings(request):
     """ List file validations """
-    fileSettings = FileSettings.objects.all()
-    serializer = fileSettingsSerializer(fileSettings, many=True)
+    fileSettings = FileSettings.objects.get()
+    serializer = fileSettingsSerializer(fileSettings)
     return Response(serializer.data)
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def update_file_settings(request, pk):
-    # find settings by pk (id)
+    # find files by pk (id)
     try: 
-        fileSettings = FileSettings().objects.get(pk=pk) 
+        fileSettings = FileSettings.objects.get(pk=pk) 
         fileSettings.value = request.data['value']
-        
-        # settings.save()
-        return Response({'message': 'Settings updated'}, status=status.HTTP_202_ACCEPTED)
-    except fileSettings.DoesNotExist: 
-        return Response({'message': 'Settings value does not exist'}, status=status.HTTP_404_NOT_FOUND)
+        fileSettings.save()
+        return Response({'message': 'File updated'}, status=status.HTTP_202_ACCEPTED)
+    except FileSettings.DoesNotExist: 
+        return Response({'message': 'The file does not exist'}, status=status.HTTP_404_NOT_FOUND)
