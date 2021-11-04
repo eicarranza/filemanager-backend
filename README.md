@@ -51,10 +51,10 @@ This backend will configure the Django project, providing seeds to the applicati
 - Download the repository from [here](https://github.com/eicarranza/filemanager-backend.git "here").
 
 - Next, execute the command makemigrations:
-`$ python manage.py makemigrations
+`$ python manage.py makemigrations`
 
 - Then, aexecute the command migrate:
-`$ python manage.py migrate
+`$ python manage.py migrate`
 
 - After that, import seeds to the project:
 `$ python manage.py loaddata ./files/Fixture/fixture.json`
